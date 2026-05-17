@@ -3,74 +3,56 @@
    script.js
    ============================================ */
 
-/* ════════════════════════════════════════════════
-   HOW TO LINK YOUR FULL VIDEOS TO EACH PROJECT:
-   
-   Each project card opens a lightbox when clicked.
-   Replace the empty strings below with your video URLs.
-   
-   You can use:
-   → YouTube embed URL:  "https://www.youtube.com/embed/YOUR_VIDEO_ID"
-   → Vimeo embed URL:    "https://player.vimeo.com/video/YOUR_VIDEO_ID"
-   → Local MP4 file:     (See note below — iframes don't play local mp4s well;
-                           for local files use the HTML5 video tag approach)
-   
-   Example:
-   "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-   ════════════════════════════════════════════════ */
 const projectVideos = [
   {
-    title: "animation Samples",
-    category: "Talking heads",
-    videoUrl: "videos/project1.mp4"
-    // Replace YOUR_VIDEO_ID_1 with the ID from your YouTube link
-    // e.g. youtube.com/watch?v=ABC123 → use "ABC123"
+    title: "Animation Samples",
+    category: "Talking Heads",
+    videoUrl: "https://www.youtube.com/embed/RLwkAIg39u8?autoplay=1"
   },
   {
     title: "Flashy Reels",
     category: "Reels",
-    videoUrl: "videos/project2.mp4"
+    videoUrl: "https://www.youtube.com/embed/D19WDyTPdJE?autoplay=1"
   },
   {
-    title: "animation Samples",
-    category: "Talking heads",
-    videoUrl: "videos/project3.mp4"
-    // For Vimeo: vimeo.com/123456789 → use "123456789"
+    title: "Flashy Reels",
+    category: "Reels",
+    videoUrl: "https://www.youtube.com/embed/RhsxnjtAO8U?autoplay=1"
   },
   {
-    title: "animation Samples",
-    category: "Talking heads",
-    videoUrl: "videos/project4.mp4"
+    title: "Animation Samples",
+    category: "Talking Heads",
+    videoUrl: "https://www.youtube.com/embed/lSSJngzV984?autoplay=1"
   },
   {
-    title: "Short Film Title",
-    category: "Short Film",
-    videoUrl: "videos/project5.mp4"
+    title: "Talking Head Intro",
+    category: "Talking Heads",
+    videoUrl: "https://www.youtube.com/embed/HeVebV0oA08?autoplay=1"
   },
   {
-    title: "Social Series Title",
-    category: "Social Content",
-    videoUrl: "videos/project6.mp4"
+    title: "Animation Samples",
+    category: "Talking Heads",
+    videoUrl: "https://www.youtube.com/embed/lXMfCB19Fxc?autoplay=1"
   },
   {
-    title: "Project Title 7",
-    category: "Commercial",
-    videoUrl: "videos/project7.mp4"
+    title: "IRL Challenge Content",
+    category: "Long-form",
+    videoUrl: "https://www.youtube.com/embed/H_V_jVDE0IQ?autoplay=1"
   },
   {
-    title: "Project Title 8",
-    category: "Music Video",
-    videoUrl: "videos/project8.mp4"
+    title: "Voice-Over Intro",
+    category: "Long-form",
+    videoUrl: "https://www.youtube.com/embed/j6XkBi-HLSY?autoplay=1"
   },
   {
-    title: "Project Title 9",
-    category: "Documentary",
-    videoUrl: "videos/project9.mp4"
+    title: "Podcast Intro",
+    category: "Podcast",
+    videoUrl: "https://www.youtube.com/embed/ti5Fp0boEmc?autoplay=1"
   },
   {
-    title: "Project Title 10",
-    category: "Brand Film",
-    videoUrl: "videos/project10.mp4"
+    title: "Talking Head Animations",
+    category: "Talking Head",
+    videoUrl: "https://www.youtube.com/embed/vuWd3LXiBwY?autoplay=1"
   }
 ];
 
@@ -105,7 +87,7 @@ document.querySelectorAll('.project-card').forEach((card, i) => {
 
   card.addEventListener('mouseenter', () => {
     video.currentTime = 0;
-    video.play().catch(() => {}); // catch if no source
+    video.play().catch(() => {});
   });
   card.addEventListener('mouseleave', () => {
     video.pause();
