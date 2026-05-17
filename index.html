@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmad Motawe — Video Editor</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">Ahmad Motawe | Professtional VideoEditor<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-reel">
+      <span>&#9654; SHOWREEL</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-video">
+      <!--
+        ════════════════════════════════════════════════
+        HOW TO ADD YOUR SHOWREEL / BACKGROUND VIDEO:
+        1. Place your video file (MP4) in the same folder as index.html
+        2. Name it: hero-bg.mp4
+        3. Uncomment the <video> tag below:
+        ════════════════════════════════════════════════
+      -->
+      <!--
+      <video autoplay muted loop playsinline>
+        <source src="hero-bg.mp4" type="video/mp4" />
+      </video>
+      -->
+    </div>
+    <div class="hero-overlay"></div>
+    
+    <!-- Hero Photo -->
+    <div class="hero-photo-container">
+      <div class="hero-photo-wrap">
+        <img src="images/profile2.jpg" alt="Ahmad Motawe" class="hero-photo" onerror="this.style.display='none'" />
+        <div class="hero-photo-placeholder">
+          <span>YOUR<br/>PHOTO</span>
+        </div>
+        <div class="hero-photo-deco"></div>
+      </div>
+    </div>
+    
+    <div class="hero-content">
+      <!--<div class="hero-eyebrow">
+        <span class="dot"></span> Available for work — 2025
+      </div> -->
+      <h1 class="hero-title">
+        <span class="line">Crafting</span>
+        <span class="line italic">stories</span>
+        <span class="line">frame</span>
+        <span class="line accent">by frame.</span>
+      </h1>
+      <p class="hero-sub">Video Editor · Motion Designer · Colorist</p>
+      <a href="#work" class="hero-cta">
+        <span>View Work</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <!-- <span>scroll</span> -->
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">120+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Years Exp</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">40+</span>
+        <span class="stat-label">Clients</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>COMMERCIAL</span><span class="sep">✦</span>
+      <span>DOCUMENTARY</span><span class="sep">✦</span>
+      <span>MUSIC VIDEO</span><span class="sep">✦</span>
+      <span>SHORT FILM</span><span class="sep">✦</span>
+      <span>COLOR GRADING</span><span class="sep">✦</span>
+      <span>MOTION GRAPHICS</span><span class="sep">✦</span>
+      <span>SOCIAL CONTENT</span><span class="sep">✦</span>
+      <span>BRAND FILMS</span><span class="sep">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>COMMERCIAL</span><span class="sep">✦</span>
+      <span>DOCUMENTARY</span><span class="sep">✦</span>
+      <span>MUSIC VIDEO</span><span class="sep">✦</span>
+      <span>SHORT FILM</span><span class="sep">✦</span>
+      <span>COLOR GRADING</span><span class="sep">✦</span>
+      <span>MOTION GRAPHICS</span><span class="sep">✦</span>
+      <span>SOCIAL CONTENT</span><span class="sep">✦</span>
+      <span>BRAND FILMS</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- WORK SECTION -->
+  <section class="work" id="work">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Selected Work</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!--
+        ════════════════════════════════════════════════
+        HOW TO ADD YOUR PROJECTS:
+
+        Each project card has:
+        • A THUMBNAIL IMAGE → replace "images/project1.jpg" with your image path
+        • A VIDEO (plays on hover) → replace "videos/project1.mp4" with your video path
+        • Title, category, year → edit the text directly
+
+        STEPS:
+        1. Create two folders next to index.html:
+             /images/   ← put your thumbnail JPGs here
+             /videos/   ← put your preview MP4s here
+        2. Replace the src values below with your file names
+        3. Change the title, category, and year text
+
+        TIP: Thumbnail should be 16:9 ratio, e.g. 1280×720px
+        ════════════════════════════════════════════════
+      -->
+
+      <!-- PROJECT 1 -->
+      <div class="project-card featured" data-index="01">
+        <div class="project-media">
+          <img src="images/project1.jpg" alt="Project 1 Thumbnail" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project1.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>01</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Talking Heads</span>
+          <h3 class="project-name">Animation Samples</h3>
+          <span class="project-year">2026</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card" data-index="02">
+        <div class="project-media">
+          <img src="images/project2.jpg" alt="Project 2" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project2.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>02</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Reels</span>
+          <h3 class="project-name">Flashy Reels</h3>
+          <span class="project-year">2025</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card" data-index="03">
+        <div class="project-media">
+          <img src="images/project3.jpg" alt="Project 3" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project3.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>03</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Reels</span>
+          <h3 class="project-name">Flashy Reels</h3>
+          <span class="project-year">2025</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="project-card" data-index="04">
+        <div class="project-media">
+          <img src="images/project4.jpg" alt="Project 4" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project4.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>04</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Talking Heads</span>
+          <h3 class="project-name">Animation Samples</h3>
+          <span class="project-year">2026</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="project-card" data-index="05">
+        <div class="project-media">
+          <img src="images/project5.jpg" alt="Project 5" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project5.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>05</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Talking Heads</span>
+          <h3 class="project-name">Talking Head Intro</h3>
+          <span class="project-year">2024</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 6 -->
+      <div class="project-card" data-index="06">
+        <div class="project-media">
+          <img src="images/project6.jpg" alt="Project 6" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project6.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>06</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Talking Heads</span>
+          <h3 class="project-name">Animation Samples</h3>
+          <span class="project-year">2024</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 7 -->
+      <div class="project-card" data-index="07">
+        <div class="project-media">
+          <img src="images/project7.jpg" alt="Project 7" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project7.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>07</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Long-form</span>
+          <h3 class="project-name">IRL Challenge Content</h3>
+          <span class="project-year">2024</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 8 -->
+      <div class="project-card" data-index="08">
+        <div class="project-media">
+          <img src="images/project8.jpg" alt="Project 8" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project8.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>08</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Long-form</span>
+          <h3 class="project-name">Voice-Over Intro</h3>
+          <span class="project-year">2023</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 9 -->
+      <div class="project-card" data-index="09">
+        <div class="project-media">
+          <img src="images/project9.jpg" alt="Project 9" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project9.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>09</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Podcast</span>
+          <h3 class="project-name">Podcast intro</h3>
+          <span class="project-year">2023</span>
+        </div>
+      </div>
+
+      <!-- PROJECT 10 -->
+      <div class="project-card" data-index="10">
+        <div class="project-media">
+          <img src="images/project10.jpg" alt="Project 10" class="project-thumb" onerror="this.style.display='none'" />
+          <video class="project-video" muted loop playsinline>
+            <source src="videos/project10.mp4" type="video/mp4" />
+          </video>
+          <div class="project-placeholder">
+            <span>10</span>
+          </div>
+          <div class="project-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">Talking Head</span>
+          <h3 class="project-name">Talking Head Animations</h3>
+          <span class="project-year">2023</span>
+        </div>
+      </div>
+
+    </div><!-- end .projects-grid -->
+  </section>
+
+  <!-- VIDEO LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-bg" id="lightboxBg"></div>
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <div class="lightbox-video-wrap">
+        <!--
+          HOW TO USE THE LIGHTBOX:
+          When a user clicks a project, a fullscreen lightbox opens.
+          Add your full video URLs (YouTube embed, Vimeo embed, or MP4 path) in script.js
+        -->
+        <iframe id="lightboxIframe" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+      </div>
+      <div class="lightbox-info">
+        <span id="lightboxCat"></span>
+        <h3 id="lightboxTitle"></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-left">
+      <div class="about-img-wrap">
+        <!--
+          ════════════════════════════════════════════════
+          HOW TO ADD YOUR PHOTO:
+          1. Put your photo in the /images/ folder
+          2. Name it: profile.jpg (or any name)
+          3. Replace "images/profile.jpg" below
+          ════════════════════════════════════════════════
+        -->
+        <img src="images/profile.jpg" alt="Your Name" class="about-photo" onerror="this.style.display='none'" />
+        <div class="about-photo-placeholder">
+          <span>YOUR<br/>PHOTO</span>
+        </div>
+        <div class="about-img-deco"></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="section-header left">
+        <span class="section-num">02</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <p class="about-bio">
+        <!--
+          EDIT THIS TEXT — replace it with your own bio
+        -->
+        I'm a video editor and motion designer with over 4+ years of experience crafting compelling visual narratives for brands, artists, and filmmakers. I specialize in turning raw footage into stories that resonate — with precise rhythm, intentional color, and bold motion design.
+      </p>
+      <p class="about-bio">
+        Based in Cairo, working worldwide. My toolkit includes Premiere Pro, After Effects.
+      </p>
+      <div class="skills-list">
+        <div class="skill-tag">Premiere Pro</div>
+        <div class="skill-tag">After Effects</div>
+        <div class="skill-tag">Color Grading</div>
+        <div class="skill-tag">Motion Graphics</div>
+        <div class="skill-tag">Sound Design</div>
+        <div class="skill-tag">VFX</div>
+      </div>
+      <a href="#contact" class="hero-cta about-cta">
+        <span>Work With Me</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Let's Work</h2>
+      </div>
+      <p class="contact-sub">
+        Have a project in mind? Let's make something great together.
+      </p>
+      <a href="mailto:tito96275@gmail.com" class="contact-email">
+        <!--
+          CHANGE THIS: Replace "your@email.com" with your actual email
+          Also change the displayed text below
+        -->
+        tito96275@gmail.com
+      </a>
+      <div class="contact-socials">
+        <!--
+          CHANGE THESE: Replace "#" with your actual social media links
+        -->
+        <a href="https://www.instagram.com/ahmad_motaw33/" class="social-link" target="_blank">Instagram</a>
+        <span class="sep-dot">·</span>
+        <a href="https://www.tiktok.com/@_xandarito_?is_from_webapp=1&sender_device=pc" class="social-link" target="_blank">Tiktok</a>
+        <span class="sep-dot">·</span>
+        <a href="https://wa.me/+201018790373" class="social-link" target="_blank">Whatsapp</a>
+        <!-- <span class="sep-dot">·</span>
+        <a href="#" class="social-link" target="_blank">LinkedIn</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-logo">VideoEditor<span>.</span></span>
+    <span class="footer-copy">© 2025 — All rights reserved</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
